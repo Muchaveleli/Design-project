@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from './navBar'
 import '../styles/global.css'
-import background from '../images/bk.jpg'
+
 
 export default function Layout({children}) {
   return (

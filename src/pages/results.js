@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Data from '../components/data'
 
 export default function results() {
   return (
@@ -8,7 +9,8 @@ export default function results() {
         <iframe src="https://www.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id=113080396&measures=off&title=off&near=off&images=off&maptype=H"
         title='results'
         height='400'
-        width='600'></iframe>
+        width='800'></iframe>
+        <Data></Data>
     </Layout> 
 
   )

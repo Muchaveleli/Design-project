@@ -4,12 +4,15 @@ module.exports = {
     title: "Vehicle energy usage",
   },
   plugins: [
-    'gatsby-source-mongodb',
     {
-      resolve: `gatsby-source-mongodb`,
-      options: { 
-        dbName: `sample_weatherdata`, 
-        collection: `data` },
-    },
-  ],
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `gallery`,
+          path: `${__dirname}/src/gallery`,
+        },
+     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+     // other plugins
+  ],  
 }
