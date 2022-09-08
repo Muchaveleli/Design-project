@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import * as styles from '../styles/login.module.css'
-import { Link } from 'gatsby'
 
 const LoginPage = () => {
   return (
