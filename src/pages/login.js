@@ -8,9 +8,9 @@ const LoginPage = () => {
     <Layout>
         <main>
             <h1>Please enter the cellphone number for the simcard inside your FMB003 tracker</h1>
-            <form>
-                <input type="tel" className={styles.input}></input>
-                <Link className={styles.btn} to='/results'>Submit</Link>
+            <form action='/results'>
+                <input type="tel" className={styles.input} required></input>
+                <input type='submit' className={styles.btn} ></input>
             </form>
         </main>
   </Layout>
